@@ -1,28 +1,17 @@
 <script>
-  import Greet from './lib/Greet.svelte'
+import { Router, Route } from "svelte-navigator";
+    import Login from "./Login.svelte";
+    import Entry from "./Vault.svelte";
 </script>
 
-<main class="container">
-  <h1>Spartan Key</h1>
+<Router>
+  <Route path="/">
+    <Login>
+    </Login>
+  </Route>
 
-  <div class="row">
-    <a href="https://github.com/EdArdolino/spartan-key" target="_blank">
-      <img src="/spartankey.png" class="logo vite" alt="Spartan Key" />
-    </a>
-  </div>
-
-  <p>
-    Enter Master Password:
-  </p>
-
-  <div class="row">
-    <Greet />
-  </div>
-
-</main>
-
-<style>
-  .logo.vite:hover {
-    filter: drop-shadow(0 0 2em #ff3e00);
-  }
-</style>
+  <Route path="/Entry">
+    <Entry>
+    </Entry>
+  </Route>
+</Router>
