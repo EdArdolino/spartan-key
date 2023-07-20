@@ -32,4 +32,4 @@ It will support multiple vaults and securly encrypt all your sensitive data, not
 1. Logging into an existing `Spartan Key` vault is simple
 2. Once the application is run and a vault is detected, all the user needs to do is enter their password and click `Unlock`
 
-NOTE; By default, the password for the entry will be hidden. In order to show the passwords for the existing entries, click `Show Passwords` in the top left corner. You can also lock the vault be using the `Lock` button, also located in the top left corner.
+NOTE: By default, the password for the entry will be hidden. In order to show the passwords for the existing entries, click `Show Passwords` in the top left corner. You can also lock the vault be using the `Lock` button, also located in the top left corner.
