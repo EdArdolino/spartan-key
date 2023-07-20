@@ -50,7 +50,7 @@
     <div class="list">
       {#each entries as entry}
         <div class="entry-wrapper">
-          <span>Url: {entry.url}</span>
+          <span>Name/URL: {entry.url}</span>
           <span>Username: {entry.username}</span>
           {#if showPassword}
             <span>Password: {entry.password}</span>
@@ -69,7 +69,7 @@
       <button id="lock" on:click={() => showPassword = !showPassword}>Show Passwords</button>
     </div>
     <div class="row">
-      <input type="text" id="url" placeholder="Entry URL:" bind:value={url} />
+      <input type="text" id="url" placeholder="Entry Name/URL:" bind:value={url} />
       <input
         type="text"
         id="username"
